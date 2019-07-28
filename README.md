@@ -1,5 +1,9 @@
 # kkdotcom
 
+## GH Pages Deployment Reference:
+
+https://cli.vuejs.org/guide/deployment.html#github-pages
+
 ## Project setup
 ```
 npm install
