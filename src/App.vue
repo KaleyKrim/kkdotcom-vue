@@ -38,13 +38,13 @@
 </template>
 
 <script>
-import ResumeContent from './components/ResumeContent.vue';
+import ResumeContent from "./components/ResumeContent.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    ResumeContent,
-  },
+    ResumeContent
+  }
 };
 </script>
 
