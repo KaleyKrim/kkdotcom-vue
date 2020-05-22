@@ -82,4 +82,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (max-width: 800px) {
+  .resume-content{
+    display: none;
+  }
+}
+</style>
