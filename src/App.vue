@@ -48,9 +48,6 @@ export default {
 </script>
 
 <style>
-/* #my-face {
-  max-width: 250px;
-} */
 #job-title {
   color: #00d5a4;
 }
