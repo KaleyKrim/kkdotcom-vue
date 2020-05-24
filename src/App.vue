@@ -1,17 +1,17 @@
 <template>
-  <div id="app" class="container">
+  <div id="app" class="container justify-content-center">
     <div class="text-center page-header">
       <h1 class="display-2">Kaley Kriminger</h1>
       <h3 id="job-title">
         Software Developer
-        <small class="text-muted">
-          { Backend ・ DevOps ・ Full Stack }
-        </small>
       </h3>
+      <small class="text-muted">
+        Backend ・ DevOps ・ Full Stack
+      </small>
     </div>
     <br />
-    <div class="row justify-content-center">
-      <div class="col-4">
+    <div class="row justify-content-center ml-3">
+      <div class="col-md-4 mb-4">
         <div class="card text-center bg-dark text-white" style="width: 18rem;">
           <h5 class="card-header">Contact me!</h5>
           <img class="card-img-top" src="./assets/kaley.png" alt="kaley" />
@@ -31,9 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
-        <ResumeContent />
-      </div>
+      <ResumeContent />
     </div>
   </div>
 </template>
