@@ -1,7 +1,7 @@
 <template>
-  <div class="resume-content">
+  <div class="resume-content card col-md-8">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 skill-header">
         <h3>Languages 🦜</h3>
       </div>
       <div class="row">
@@ -17,7 +17,7 @@
     </div>
     <br />
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 skill-header">
         <h3>Skills 🌱</h3>
       </div>
       <div class="row">
@@ -60,7 +60,7 @@
     </div>
     <br />
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 skill-header">
         <h3>Certifications 🏆</h3>
       </div>
       <ul>
@@ -84,8 +84,8 @@ export default {
 
 <style scoped>
 @media (max-width: 800px) {
-  .resume-content{
-    display: none;
+  .skill-header{
+    text-align: center;
   }
 }
 </style>
