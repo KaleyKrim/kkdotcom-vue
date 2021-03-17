@@ -1,90 +1,103 @@
 <template>
   <div class="resume-content card col-md-8">
-    <div class="row">
-      <div class="col-12 skill-header">
-        <h3>Languages 🦜</h3>
-      </div>
-      <div class="row">
-        <div class="col">
-          <ul>
-            <li>TypeScript</li>
-            <li>Node.js/JavaScript(ES6)</li>
-            <li>Go (occasional)</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-12 skill-header">
-        <h3>Skills 🌱</h3>
-      </div>
-      <div class="row">
-        <div class="col-7">
-          <ul>
-            <li>API Design</li>
-            <li>
-              Relational Databases
-              <ul>
-                <li><small>MySQL / PostgreSQL</small></li>
-              </ul>
-            </li>
-            <li>
-              NoSQL
-              <ul>
-                <li><small>Redis</small></li>
-              </ul>
-            </li>
-            <li>Serverless Computing</li>
-            <li>
-              Cloud Architecture / DevOps
-              <ul>
-                <li><small>AWS</small></li>
-                <li><small>Terraform</small></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="col-5">
-          <ul>
-            <li>Unit Testing</li>
-            <li>Docker</li>
-            <li>CI</li>
-            <li>Vue</li>
-            <li>React</li>
-            <li>AngularJS</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-12 skill-header">
-        <h3>Certifications 🏆</h3>
-      </div>
-      <ul>
-        <li>
-          <a
-            href="https://www.youracclaim.com/badges/5b5bc9f1-7cdf-4a00-b9f0-3cf22ac50848/public_url"
-            >AWS Certified Solutions Architect – Associate</a
-          >
-          (February 2020)
-        </li>
-      </ul>
-    </div>
+    <ResumeContentCard
+      :title="cardDetails.languages.title"
+      :list="cardDetails.languages.list"
+      :links="cardDetails.languages.links"
+    />
+    <ResumeContentCard
+      :title="cardDetails.skills.title"
+      :list="cardDetails.skills.list"
+      :links="cardDetails.skills.links"
+    />
+    <ResumeContentCard
+      :title="cardDetails.tools.title"
+      :list="cardDetails.tools.list"
+      :links="cardDetails.tools.links"
+    />
+    <ResumeContentCard
+      :title="cardDetails.certifications.title"
+      :list="cardDetails.certifications.list"
+      :links="cardDetails.certifications.links"
+    />
   </div>
 </template>
 
+<style scoped>
+.resume-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  grid-row-gap: 20px;
+}
+</style>
+
 <script>
+import ResumeContentCard from "./ResumeContentCard.vue";
+
 export default {
-  name: "ResumeContent"
+  name: "ResumeContent",
+  components: {
+    ResumeContentCard
+  },
+  data: function() {
+    return {
+      cardDetails: {
+        languages: {
+          title: "Languages 🦜",
+          list: [
+            "TypeScript",
+            "Node.js/JavaScript",
+            "Python (occasional)",
+            "Go (occasional)",
+            "SQL"
+          ],
+          links: []
+        },
+        skills: {
+          title: "Skills 🌱",
+          list: [
+            "API Design",
+            "Frontend Development",
+            "CI",
+            "Unit/Integration Testing",
+            "Serverless Computing"
+          ],
+          links: []
+        },
+        tools: {
+          title: "Tools 🦕",
+          list: [
+            "AWS, GCP",
+            "Terraform",
+            "Docker",
+            "Ember.js, Vue.js, React (occasional)",
+            "MySQL, MariaDB, PostgreSQL",
+            "Redis"
+          ],
+          links: []
+        },
+        certifications: {
+          title: "Certifications 🏆",
+          list: [],
+          links: [
+            {
+              url:
+                "https://www.youracclaim.com/badges/5b5bc9f1-7cdf-4a00-b9f0-3cf22ac50848/public_url",
+              text: "AWS Certified Solutions Architect – Associate (February 2020)"
+            }
+          ]
+        }
+      }
+    };
+  }
 };
 </script>
 
 <style scoped>
 @media (max-width: 800px) {
-  .skill-header{
+  .skill-header {
     text-align: center;
   }
 }

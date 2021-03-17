@@ -6,7 +6,7 @@
         Software Developer
       </h3>
       <small class="text-muted">
-        Backend ・ DevOps ・ Full Stack
+        Full Stack ・ Backend ・ DevOps
       </small>
     </div>
     <br />
@@ -16,7 +16,6 @@
           <h5 class="card-header">Contact me!</h5>
           <img class="card-img-top" src="./assets/kaley.png" alt="kaley" />
           <div class="card-body">
-            <p class="card-text">I'm currently looking for a back end or full stack position. (Within the US or remote)</p>
             <ul class="list-group">
               <li class="list-group-item">
                 <a href="mailto:kaley.kriminger@gmail.com">✉️ Email</a>
