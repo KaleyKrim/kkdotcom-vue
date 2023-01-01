@@ -14,7 +14,7 @@
       <div class="col-md-4 mb-4">
         <div class="card text-center bg-dark text-white" style="width: 18rem;">
           <h5 class="card-header">Contact me!</h5>
-          <img class="card-img-top" src="./assets/kaley.png" alt="kaley" />
+          <img class="card-img-top" src="./assets/kaley.jpeg" alt="kaley" />
           <div class="card-body">
             <ul class="list-group">
               <li class="list-group-item">
