@@ -48,9 +48,9 @@ export default {
           title: "Languages 🦜",
           list: [
             "TypeScript",
+            "Go",
             "Node.js/JavaScript",
-            "Python (occasional)",
-            "Go (occasional)",
+            "Python",
             "SQL"
           ],
           links: []
@@ -58,22 +58,21 @@ export default {
         skills: {
           title: "Skills 🌱",
           list: [
-            "API Design",
+            "API Design/Backend Development",
+            "Database Design",
             "Frontend Development",
-            "CI",
             "Unit/Integration Testing",
-            "Serverless Computing"
           ],
           links: []
         },
         tools: {
           title: "Tools 🦕",
           list: [
+            "React, Ember.js, Vue.js",
+            "PostgreSQL, MySQL, MariaDB",
             "AWS, GCP",
             "Terraform",
             "Docker",
-            "Ember.js, Vue.js, React (occasional)",
-            "MySQL, MariaDB, PostgreSQL",
             "Redis"
           ],
           links: []
